@@ -41,16 +41,22 @@ Double-click `PC-Monitor.exe` — that's it. No installation, no dependencies.
 
 ## Source Code
 
-The full C# source is in the `src/` folder. To rebuild from source:
+The full C# source is in the `src/` folder.
+
+**Prerequisites:** [.NET 8 SDK](https://dotnet.microsoft.com/download/dotnet/8.0) installed on your machine.
+
+To rebuild the EXE:
 
 ```bash
 cd src
 dotnet publish -c Release -o ../
 ```
 
+This produces `PC-Monitor.exe` in the parent folder alongside its required native DLLs. The EXE is self-contained — it bundles the .NET runtime, so no .NET install is needed on the target PC.
+
 Built with:
-- .NET 8 (Windows Forms)
-- Single-file self-contained publish (no .NET runtime needed on target machine)
+- .NET 8 Windows Forms
+- Single-file self-contained publish
 
 ---
 
