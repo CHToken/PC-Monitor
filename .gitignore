@@ -1,0 +1,20 @@
+# Build output
+bin/
+obj/
+*.pdb
+*.log
+
+# Compiled binaries (rebuild from src/)
+*.exe
+*.dll
+
+# IDE
+.vs/
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Publish temp files
+publish/
